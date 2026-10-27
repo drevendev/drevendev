@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" role="img" aria-labelledby="title">
+<title id="title">ECG pulse</title>
+<style>:root{--pulse:#52735A}@media(prefers-color-scheme:dark){:root{--pulse:#87A78C}}</style>
+<path d="M2 19h7l4-10 6 20 5-15 3 5h7" fill="none" stroke="var(--pulse,#52735A)" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+

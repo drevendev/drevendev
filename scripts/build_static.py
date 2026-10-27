@@ -5,6 +5,7 @@ from pathlib import Path
 import sys
 
 from refresh_profile import ROOT, START, END, ProfileError, block_bounds, load_config
+import build_assets
 
 
 def esc(text):
@@ -15,6 +16,10 @@ def link(url, text):
     return f'<a href="{esc(url)}">{esc(text)}</a>'
 
 
+def badge(url, asset, label):
+    return f'<a href="{esc(url)}"><img src="assets/links/{asset}.svg" width="136" height="38" alt="{esc(label)}"></a>'
+
+
 def render(config, live):
     projects = sorted(config["projects"], key=lambda p: p["stable_display_order"])
     featured = [p for p in projects if p["featured"]]
@@ -23,7 +28,20 @@ def render(config, live):
         ctas = " · ".join(link(c["url"], c["label"]) for c in p["ctas"])
         cards.append(f'<h3>{esc(p["label"])}</h3>\n<p><strong>{esc(p["one_liner"])}</strong></p>\n'
                      f'<p>{esc(p["description"])}</p>\n<p>{ctas}</p>')
-    if config["layout"] == "grid":
+    if config["layout"] == "cards":
+        visuals = []
+        for p in featured:
+            alt = esc(p["label"] + ". " + p["one_liner"] + " " + p["description"])
+            visuals.append(f'<a href="{esc(p["url"])}"><picture>'
+                           f'<source media="(prefers-color-scheme: dark)" srcset="assets/cards/{p["slug"]}-dark.svg">'
+                           f'<img src="assets/cards/{p["slug"]}-light.svg" width="400" alt="{alt}">'
+                           '</picture></a>')
+        actions = []
+        for p in featured:
+            ctas = " · ".join(link(c["url"], c["label"]) for c in p["ctas"])
+            actions.append(f'<li><strong>{esc(p["label"])}</strong> — {ctas}</li>')
+        machinery = '<p align="center">\n' + '\n '.join(visuals) + '\n</p>\n\n<ul>\n' + '\n'.join(actions) + '\n</ul>'
+    elif config["layout"] == "grid":
         machinery = '<table>\n<tr>\n' + '\n</tr>\n<tr>\n'.join(
             '\n'.join(f'<td width="50%" valign="top">\n{card}\n</td>' for card in cards[i:i + 2])
             for i in (0, 2)) + '\n</tr>\n</table>'
@@ -32,7 +50,7 @@ def render(config, live):
     shelf = "\n".join(f'<li><strong>{link(p["url"], p["label"])}</strong> — {esc(p["description"])}</li>'
                       for p in projects if p["secondary"])
     links = config["links"]
-    socials = " &nbsp;·&nbsp; ".join(link(links[k], name) for k, name in
+    socials = "\n ".join(badge(links[k], k, name) for k, name in
                                     (("linkedin", "LinkedIn"), ("itch", "itch.io"),
                                      ("play", "Google Play"), ("spotify", "Spotify")))
     return f'''<picture>
@@ -70,8 +88,8 @@ Stable public releases, one per project. Release dates are shown in UTC.
 
 Sometimes I make games. Sometimes music. Sometimes the distinction gets blurry.
 
-{link(links["itch"], "Games on itch.io")} · {link(links["play"], "Google Play")}<br>
-{link(links["spotify"], "Dr. Weeb")} · {link(links["robot_anime"], "Robot Anime")}
+<p>{badge(links["itch"], "itch", "Games on itch.io")} {badge(links["play"], "play", "Google Play")}<br>
+{badge(links["spotify"], "dr-weeb", "Dr. Weeb")} {badge(links["robot_anime"], "robot-anime", "Robot Anime")}</p>
 
 ---
 
@@ -86,9 +104,11 @@ def main():
     args = parser.parse_args()
     path = ROOT / "README.md"
     try:
+        config = load_config()
+        build_assets.build(config, check=args.check)
         before = path.read_bytes()
         start, end = block_bounds(before)
-        output = render(load_config(), before[start:end].decode("utf-8")).encode("utf-8")
+        output = render(config, before[start:end].decode("utf-8")).encode("utf-8")
         if args.check:
             if output != before:
                 print("Static README differs from data/profile.json; run python scripts/build_static.py")
