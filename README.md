@@ -16,7 +16,7 @@
 ## The main machinery
 
 <h3>🦀 HungryCrab</h3>
-<p><strong>Eat a repository. Keep what is useful.</strong></p>
+<p><strong>Chew through a repository. Keep what is useful.</strong></p>
 <p>Find reusable ideas in other codebases, with evidence and licensing guardrails.</p>
 <p><a href="https://github.com/drevendev/HungryCrab">Repository</a></p>
 
@@ -76,3 +76,4 @@ Sometimes I make games. Sometimes music. Sometimes the distinction gets blurry.
 ---
 
 <sub>Still making things. Occasionally putting the tools away.</sub>
+<br><sub>Emoji artwork: <a href="docs/ASSET_CREDITS.md">Twemoji · CC BY 4.0</a>.</sub>
