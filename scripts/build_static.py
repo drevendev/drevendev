@@ -53,47 +53,46 @@ def render(config, live):
                                     (("linkedin", "LinkedIn"), ("itch", "itch.io"),
                                      ("play", "Google Play"), ("spotify", "Spotify")))
     return f'''<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/header-ecg-dark.svg">
-  <img src="assets/header-ecg-light.svg" alt="Dreven's workshop: crab, ECG pulse line for systems, fireworks and balanced scales." width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/header-ecg-dark.svg?v=2">
+  <img src="assets/header-ecg-light.svg?v=2" alt="Dreven: crab for tools, ECG pulse line for systems, fireworks for experiments, and scales for simulations." width="100%">
 </picture>
 
 <div align="center">
 
 <h1>{esc(config["heading"])}</h1>
 <p>{esc(config["subtitle"])}</p>
-<p><em>{esc(config["character"])}</em></p>
+<p>{esc(config["character"])}</p>
 
 <p>{socials}</p>
 
 </div>
 
-## The main machinery
+## Projects
 
 {machinery}
 
-## From the workbench
+## Latest releases
 
-Stable public releases, one per project. Release dates are shown in UTC.
+Latest stable release from each project, up to four. Dates are in UTC.
 
 <!-- LIVE_RELEASES:START -->{live}<!-- LIVE_RELEASES:END -->
 
-## More from the workshop
+## More projects
 
 <ul>
 {shelf}
 </ul>
 
-## And when the code starts making noises
+## Games and music
 
-Sometimes I make games. Sometimes music. Sometimes the distinction gets blurry.
+My games are on itch.io and Google Play. I release music as Dr. Weeb and Robot Anime.
 
 <p>{badge(links["itch"], "itch", "Games on itch.io")} {badge(links["play"], "play", "Google Play")}<br>
 {badge(links["spotify"], "dr-weeb", "Dr. Weeb")} {badge(links["robot_anime"], "robot-anime", "Robot Anime")}</p>
 
 ---
 
-<sub>Still making things. Occasionally putting the tools away.</sub>
-<br><sub>Emoji artwork: <a href="docs/ASSET_CREDITS.md">Twemoji · CC BY 4.0</a>.</sub>
+<sub>Emoji artwork: <a href="docs/ASSET_CREDITS.md">Twemoji · CC BY 4.0</a>.</sub>
 '''
 
 
