@@ -1,0 +1,48 @@
+{
+  "HungryCrab": [
+    {
+      "draft": false,
+      "prerelease": false,
+      "tag_name": "v1.2.0",
+      "html_url": "https://github.com/drevendev/HungryCrab/releases/tag/v1.2.0",
+      "published_at": "2026-09-20T12:00:00Z"
+    }
+  ],
+  "Devostasis": [
+    {
+      "draft": false,
+      "prerelease": false,
+      "tag_name": "v1.1.0",
+      "html_url": "https://github.com/drevendev/Devostasis/releases/tag/v1.1.0",
+      "published_at": "2026-09-20T12:00:00Z"
+    }
+  ],
+  "BeautifulRepo": [
+    {
+      "draft": false,
+      "prerelease": false,
+      "tag_name": "v1.0.0",
+      "html_url": "https://github.com/drevendev/BeautifulRepo/releases/tag/v1.0.0",
+      "published_at": "2026-09-19T12:00:00Z"
+    }
+  ],
+  "trade_simulation": [
+    {
+      "draft": false,
+      "prerelease": false,
+      "tag_name": "v0.9.0",
+      "html_url": "https://github.com/drevendev/trade_simulation/releases/tag/v0.9.0",
+      "published_at": "2026-09-18T12:00:00Z"
+    }
+  ],
+  "PatchPitch": [
+    {
+      "draft": false,
+      "prerelease": false,
+      "tag_name": "v0.8.0",
+      "html_url": "https://github.com/drevendev/PatchPitch/releases/tag/v0.8.0",
+      "published_at": "2026-09-17T12:00:00Z"
+    }
+  ],
+  "CompostClub": []
+}

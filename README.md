@@ -1,16 +1,78 @@
-## Hi there 👋
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg">
+  <img src="assets/header-light.svg" alt="Dreven's workshop: small mechanisms for tools, curious systems, simulations and games." width="100%">
+</picture>
 
-<!--
-**drevendev/drevendev** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<div align="center">
 
-Here are some ideas to get you started:
+<h1>Hey, I&#x27;m Dreven. I make things.</h1>
+<p>Open-source tools, curious systems, simulations, and games.</p>
+<p><em>Some useful. Some weird. Occasionally both.</em></p>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<p><a href="https://www.linkedin.com/in/abogun/">LinkedIn</a> &nbsp;·&nbsp; <a href="https://drevengames.itch.io/">itch.io</a> &nbsp;·&nbsp; <a href="https://play.google.com/store/apps/developer?id=Dreven+Games">Google Play</a> &nbsp;·&nbsp; <a href="https://open.spotify.com/artist/0kL9vr7sptfFqyRd2TdQ2x">Spotify</a></p>
+
+</div>
+
+## The main machinery
+
+<table>
+<tr>
+<td width="50%" valign="top">
+<h3>🦀 HungryCrab</h3>
+<p><strong>Eat a repository. Keep what is useful.</strong></p>
+<p>Find reusable ideas in other codebases, with evidence and licensing guardrails.</p>
+<p><a href="https://github.com/drevendev/HungryCrab">Repository</a></p>
+</td>
+<td width="50%" valign="top">
+<h3>🫀 Devostasis</h3>
+<p><strong>Vital signs for repositories, not mystery scores.</strong></p>
+<p>Deterministic diagnostics that keep missing evidence unknown and explain what actually changed.</p>
+<p><a href="https://github.com/drevendev/Devostasis">Repository</a></p>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<h3>✨ BeautifulRepo</h3>
+<p><strong>A repository should be pleasant to visit.</strong></p>
+<p>Practical checks, examples, and templates for open source that&#x27;s easier to understand, try, and contribute to.</p>
+<p><a href="https://github.com/drevendev/BeautifulRepo">Repository</a> · <a href="https://github.com/drevendev/BeautifulRepo#start-here">Start here</a></p>
+</td>
+<td width="50%" valign="top">
+<h3>⚖️ TradeCraft</h3>
+<p><strong>Build a market. Let the economy argue with itself.</strong></p>
+<p>A deterministic sandbox for prices, production, trade, and settlement.</p>
+<p><a href="https://github.com/drevendev/trade_simulation">Repository</a> · <a href="https://drevendev.github.io/trade_simulation/">Milestone viewer</a></p>
+</td>
+</tr>
+</table>
+
+## From the workbench
+
+Stable public releases, one per project. Release dates are shown in UTC.
+
+<!-- LIVE_RELEASES:START -->
+<p>Release updates will appear here after the first verified refresh.</p>
+<!-- LIVE_RELEASES:END -->
+
+## More from the workshop
+
+<ul>
+<li><strong><a href="https://github.com/drevendev/Dayflare">Dayflare</a></strong> — Explore how attention shifts across Wikipedia.</li>
+<li><strong><a href="https://github.com/drevendev/Scriptorium">Scriptorium</a></strong> — Offline text diagnostics with reproducible measurements.</li>
+<li><strong><a href="https://github.com/drevendev/Quillgrain">Quillgrain</a></strong> — Versioned writing contexts and draft checks.</li>
+<li><strong><a href="https://github.com/drevendev/PatchPitch">PatchPitch</a></strong> — Turn release notes into announcements with local AI.</li>
+<li><strong><a href="https://github.com/drevendev/CompostClub">Compost Club</a></strong> — Let unfinished ideas ferment with a local model.</li>
+<li><strong><a href="https://github.com/drevendev/Playmancer">Playmancer</a></strong> — Mix preferences and inspect recommendation trade-offs.</li>
+<li><strong><a href="https://github.com/drevendev/EndlessZenFramework">EndlessZenFramework</a></strong> — A starter for bounded autonomous research workers.</li>
+</ul>
+
+## And when the code starts making noises
+
+Sometimes I make games. Sometimes music. Sometimes the distinction gets blurry.
+
+<a href="https://drevengames.itch.io/">Games on itch.io</a> · <a href="https://play.google.com/store/apps/developer?id=Dreven+Games">Google Play</a><br>
+<a href="https://open.spotify.com/artist/0kL9vr7sptfFqyRd2TdQ2x">Dr. Weeb</a> · <a href="https://open.spotify.com/artist/6iY5dj20aofxETQeOsb3G7">Robot Anime</a>
+
+---
+
+<sub>Still making things. Occasionally putting the tools away.</sub>

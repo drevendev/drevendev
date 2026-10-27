@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 260" role="img" aria-labelledby="title desc">
+<title id="title">Dreven's workshop</title>
+<desc id="desc">A small workbench of connected tools: a crab, a pulse, a spark and balanced markets. Some useful. Some weird. Occasionally both.</desc>
+<rect width="1280" height="260" rx="14" fill="#E9E6DD"/>
+<g fill="none" stroke="#24292F" stroke-width="2">
+<path opacity=".16" d="M32 34h1216M32 226h1216"/>
+<path d="M38 34h26m-13-13v26M1216 226h26m-13-13v26"/>
+</g>
+<g font-family="Arial, Helvetica, sans-serif" fill="#24292F">
+<text x="54" y="76" font-size="16" letter-spacing="5">A SMALL INDEPENDENT WORKSHOP</text>
+<text x="49" y="168" font-size="98" font-weight="700" letter-spacing="-4">DREVEN</text>
+<text x="55" y="205" font-size="19">Some useful. Some weird. Occasionally both.</text>
+</g>
+<g fill="none" stroke="#24292F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+<path d="M660 130h52m96 0h44m96 0h44" stroke="#52735A"/>
+<path d="M757 82V58h279v24m-139 96v24H757v-24" opacity=".35"/>
+<rect x="710" y="82" width="96" height="96" rx="18"/>
+<rect x="850" y="82" width="96" height="96" rx="18"/>
+<rect x="990" y="82" width="96" height="96" rx="18"/>
+<circle cx="1160" cy="130" r="49"/>
+<path d="M737 130q20-23 42 0v20h-42zM743 149l-9 12m19-12-2 14m17-14 9 12M736 137l-11-7-1-17m54 24 12-7 1-17"/>
+<path d="M721 115l-7-8m11 7 7-8"/>
+<path d="M787 115l-7-8m12 7 7-8"/>
+<path d="M865 132h15l8-20 12 40 9-20h22" stroke="#52735A" stroke-width="4"/>
+<path d="M1037 104l7 19 20 7-20 7-7 19-7-19-19-7 19-7z" fill="#D6A55B"/>
+<path d="M1160 103v55m-25 0h50m-25-44-30 6m30-6 30 6m-60 0-12 20h25zm60 0-12 20h25z"/>
+<path d="M698 202h515" opacity=".25"/>
+<circle cx="758" cy="58" r="4" fill="#52735A" stroke="none"/>
+<circle cx="1036" cy="58" r="4" fill="#D6A55B" stroke="none"/>
+<circle cx="898" cy="202" r="4" fill="#52735A" stroke="none"/>
+</g>
+<g fill="#24292F" font-family="Arial, Helvetica, sans-serif" font-size="11" letter-spacing="2" text-anchor="middle">
+<text x="758" y="221">TOOLS</text><text x="898" y="221">SYSTEMS</text>
+<text x="1038" y="221">EXPERIMENTS</text><text x="1160" y="221">SIMULATIONS</text>
+</g>
+</svg>
+
