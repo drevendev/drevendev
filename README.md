@@ -46,7 +46,12 @@
 Stable public releases, one per project. Release dates are shown in UTC.
 
 <!-- LIVE_RELEASES:START -->
-<p>Release updates will appear here after the first verified refresh.</p>
+<ul>
+<li><strong>🦀 HungryCrab</strong> · <a href="https://github.com/drevendev/HungryCrab/releases/tag/v0.6.6">v0.6.6</a> · 26 Oct 2026 UTC</li>
+<li><strong>PatchPitch</strong> · <a href="https://github.com/drevendev/PatchPitch/releases/tag/v0.3.0">v0.3.0</a> · 24 Oct 2026 UTC</li>
+<li><strong>✨ BeautifulRepo</strong> · <a href="https://github.com/drevendev/BeautifulRepo/releases/tag/v0.2.0">v0.2.0</a> · 23 Oct 2026 UTC</li>
+<li><strong>⚖️ TradeCraft</strong> · <a href="https://github.com/drevendev/trade_simulation/releases/tag/v0.4.0">v0.4.0</a> · 30 Sep 2026 UTC</li>
+</ul>
 <!-- LIVE_RELEASES:END -->
 
 ## More from the workshop
