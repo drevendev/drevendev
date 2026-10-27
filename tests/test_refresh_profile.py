@@ -81,6 +81,38 @@ class ContractTests(unittest.TestCase):
         self.assertIn('assets/icons/pulse.svg', output)
         self.assertNotIn('heart.svg', output)
 
+    def test_release_table_keeps_each_version_and_date_with_its_project(self):
+        class TableReader(HTMLParser):
+            def __init__(self):
+                super().__init__()
+                self.rows = []
+                self.cell = None
+
+            def handle_starttag(self, tag, attrs):
+                if tag == "tr":
+                    self.rows.append([])
+                elif tag in ("th", "td"):
+                    self.cell = []
+
+            def handle_data(self, data):
+                if self.cell is not None:
+                    self.cell.append(data)
+
+            def handle_endtag(self, tag):
+                if tag in ("th", "td"):
+                    self.rows[-1].append("".join(self.cell).strip())
+                    self.cell = None
+
+        chosen = self.latest()
+        table = TableReader()
+        table.feed(r.render_releases(chosen))
+        self.assertEqual(table.rows[0], ["Project", "Release", "Date (UTC)"])
+        self.assertEqual(len(table.rows), len(chosen) + 1)
+        for row, release in zip(table.rows[1:], chosen):
+            date = release["date"]
+            self.assertEqual(row, [release["project"]["label"], release["tag"],
+                                   f"{date.day:02d} {r.MONTHS[date.month - 1]} {date.year}"])
+
     def test_config_rejects_social_redirect_host(self):
         self.config_error(lambda c: c["links"].update(spotify="https://redirect.example/spotify"))
 
