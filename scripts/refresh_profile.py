@@ -236,7 +236,9 @@ def select_releases(config, collections):
 def render_releases(releases):
     if not releases:
         return "<p>No stable public releases to show yet.</p>"
-    lines = ["<ul>"]
+    lines = ['<table>',
+             '<thead><tr><th scope="col">Project</th><th scope="col">Release</th><th scope="col">Date (UTC)</th></tr></thead>',
+             '<tbody>']
     for r in releases:
         date = r["date"]
         label = html.escape(r["project"]["label"])
@@ -246,9 +248,10 @@ def render_releases(releases):
         visual = f'<img src="assets/icons/{icon}.svg" width="20" height="20" alt="{ICONS[icon]}">'
         tag = html.escape(r["tag"])
         url = html.escape(r["url"], quote=True)
-        readable = f"{date.day:02d} {MONTHS[date.month - 1]} {date.year} UTC"
-        lines.append(f'<li>{visual} <strong>{label}</strong> · <a href="{url}">{tag}</a> · {readable}</li>')
-    return "\n".join(lines + ["</ul>"])
+        readable = f"{date.day:02d} {MONTHS[date.month - 1]} {date.year}"
+        lines.append(f'<tr><td>{visual} <strong>{label}</strong></td>'
+                     f'<td><a href="{url}">{tag}</a></td><td>{readable}</td></tr>')
+    return "\n".join(lines + ["</tbody>", "</table>"])
 
 
 def block_bounds(content):

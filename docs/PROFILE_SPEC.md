@@ -7,7 +7,7 @@ document is retained privately; no local file path or private operational contex
 - Public profile: the root README of this repository, drevendev/drevendev.
 - Public language: English. Voice: direct and conversational; explain what a project
   does before adding a joke. Avoid repeated slogans and forced self-deprecation.
-- Exact heading: "Hey, I'm Dreven. I make things."
+- Exact heading: "Hello there! I'm Dreven"
 - Introduction and project copy are editable in data/profile.json. The owner's
   October 2026 editorial revision replaces the original fixed subtitle.
 - Exactly four featured projects, in order: HungryCrab, Devostasis,
@@ -22,6 +22,7 @@ document is retained privately; no local file path or private operational contex
 - Runtime updates only the unique LIVE_RELEASES block; all other bytes are preserved.
 - Read only stable public GitHub Releases from configured sources. At most four
   repositories, one release each, ordered by publication date and stable config order.
+- Render releases in a table with Project, Release, and Date (UTC) columns.
 - No private endpoints, personal tokens, LLMs, paid APIs, body/title reuse or activity fabrication.
 - Anonymous HTTPS GET requests go only to the expected GitHub API release endpoints.
   Release links must match the exact configured owner/repository/tag. Redirects are refused.

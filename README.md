@@ -5,8 +5,8 @@
 
 <div align="center">
 
-<h1>Hey, I&#x27;m Dreven. I make things.</h1>
-<p>I build tools for working with code and text, and simulations to see how things behave.</p>
+<h1>Hello there! I&#x27;m Dreven</h1>
+<p>I build tools for working with code and text, simulations to see how things behave and random stuff just for fun.</p>
 <p>I also make games and music. You&#x27;ll find those below.</p>
 
 <p><a href="https://www.linkedin.com/in/abogun/"><img src="assets/links/linkedin.svg" width="136" height="38" alt="LinkedIn"></a>
@@ -19,7 +19,7 @@
 ## Projects
 
 <table align="left" width="400">
-<tr><td width="400" height="240" valign="top"><h3><a href="https://github.com/drevendev/HungryCrab"><img src="assets/icons/crab.svg" width="28" height="28" alt=""> HungryCrab</a></h3><p><strong>Chew through a repository. Keep what is useful.</strong></p><p>Looks through other repositories for ideas worth using, checks the license, and proposes changes for review.</p></td></tr>
+<tr><td width="400" height="240" valign="top"><h3><a href="https://github.com/drevendev/HungryCrab"><img src="assets/icons/crab.svg" width="28" height="28" alt=""> HungryCrab</a></h3><p><strong>Chew through a repository. Keep what is useful</strong></p><p>Looks through other repositories for ideas worth using, checks the license, and proposes changes for review.</p></td></tr>
 <tr><td><a href="https://github.com/drevendev/HungryCrab">Repository</a></td></tr>
 </table>
 
@@ -29,12 +29,12 @@
 </table>
 
 <table align="left" width="400">
-<tr><td width="400" height="240" valign="top"><h3><a href="https://github.com/drevendev/BeautifulRepo"><img src="assets/icons/sparkles.svg" width="28" height="28" alt=""> BeautifulRepo</a></h3><p><strong>Make the repo easier to get into.</strong></p><p>Checks, examples, and templates to help people understand the project, run it, and make their first contribution.</p></td></tr>
+<tr><td width="400" height="240" valign="top"><h3><a href="https://github.com/drevendev/BeautifulRepo"><img src="assets/icons/sparkles.svg" width="28" height="28" alt=""> BeautifulRepo</a></h3><p><strong>Make the repo shiny</strong></p><p>Checks, examples, and templates to help people understand the project, run it, and make their first contribution.</p></td></tr>
 <tr><td><a href="https://github.com/drevendev/BeautifulRepo">Repository</a> · <a href="https://github.com/drevendev/BeautifulRepo#start-here">Start here</a></td></tr>
 </table>
 
 <table align="left" width="400">
-<tr><td width="400" height="240" valign="top"><h3><a href="https://github.com/drevendev/trade_simulation"><img src="assets/icons/scales.svg" width="28" height="28" alt=""> TradeCraft</a></h3><p><strong>Set up an economy and see what happens.</strong></p><p>Simulates production, prices, trade, and settlement. Run the same setup twice and get the same result.</p></td></tr>
+<tr><td width="400" height="240" valign="top"><h3><a href="https://github.com/drevendev/trade_simulation"><img src="assets/icons/scales.svg" width="28" height="28" alt=""> TradeCraft</a></h3><p><strong>Silly global economic simulation</strong></p><p>Simulates production, prices, trade, and settlement. Run the same setup twice and get the same result.</p></td></tr>
 <tr><td><a href="https://github.com/drevendev/trade_simulation">Repository</a> · <a href="https://drevendev.github.io/trade_simulation/">Milestone viewer</a></td></tr>
 </table>
 
@@ -45,12 +45,15 @@
 Latest stable release from each project, up to four. Dates are in UTC.
 
 <!-- LIVE_RELEASES:START -->
-<ul>
-<li><img src="assets/icons/crab.svg" width="20" height="20" alt="Crab"> <strong>HungryCrab</strong> · <a href="https://github.com/drevendev/HungryCrab/releases/tag/v0.6.6">v0.6.6</a> · 26 Oct 2026 UTC</li>
-<li><img src="assets/icons/package.svg" width="20" height="20" alt="Package"> <strong>PatchPitch</strong> · <a href="https://github.com/drevendev/PatchPitch/releases/tag/v0.3.0">v0.3.0</a> · 24 Oct 2026 UTC</li>
-<li><img src="assets/icons/sparkles.svg" width="20" height="20" alt="Sparkles"> <strong>BeautifulRepo</strong> · <a href="https://github.com/drevendev/BeautifulRepo/releases/tag/v0.2.0">v0.2.0</a> · 23 Oct 2026 UTC</li>
-<li><img src="assets/icons/scales.svg" width="20" height="20" alt="Balance scales"> <strong>TradeCraft</strong> · <a href="https://github.com/drevendev/trade_simulation/releases/tag/v0.4.0">v0.4.0</a> · 30 Sep 2026 UTC</li>
-</ul>
+<table>
+<thead><tr><th scope="col">Project</th><th scope="col">Release</th><th scope="col">Date (UTC)</th></tr></thead>
+<tbody>
+<tr><td><img src="assets/icons/crab.svg" width="20" height="20" alt="Crab"> <strong>HungryCrab</strong></td><td><a href="https://github.com/drevendev/HungryCrab/releases/tag/v0.6.6">v0.6.6</a></td><td>26 Oct 2026</td></tr>
+<tr><td><img src="assets/icons/package.svg" width="20" height="20" alt="Package"> <strong>PatchPitch</strong></td><td><a href="https://github.com/drevendev/PatchPitch/releases/tag/v0.3.0">v0.3.0</a></td><td>24 Oct 2026</td></tr>
+<tr><td><img src="assets/icons/sparkles.svg" width="20" height="20" alt="Sparkles"> <strong>BeautifulRepo</strong></td><td><a href="https://github.com/drevendev/BeautifulRepo/releases/tag/v0.2.0">v0.2.0</a></td><td>23 Oct 2026</td></tr>
+<tr><td><img src="assets/icons/scales.svg" width="20" height="20" alt="Balance scales"> <strong>TradeCraft</strong></td><td><a href="https://github.com/drevendev/trade_simulation/releases/tag/v0.4.0">v0.4.0</a></td><td>30 Sep 2026</td></tr>
+</tbody>
+</table>
 <!-- LIVE_RELEASES:END -->
 
 ## More projects

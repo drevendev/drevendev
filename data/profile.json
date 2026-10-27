@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "owner": "drevendev",
-  "heading": "Hey, I'm Dreven. I make things.",
-  "subtitle": "I build tools for working with code and text, and simulations to see how things behave.",
+  "heading": "Hello there! I'm Dreven",
+  "subtitle": "I build tools for working with code and text, simulations to see how things behave and random stuff just for fun.",
   "character": "I also make games and music. You'll find those below.",
   "layout": "cards",
   "projects": [
@@ -14,7 +14,7 @@
       "secondary": false,
       "collect_releases": true,
       "stable_display_order": 1,
-      "one_liner": "Chew through a repository. Keep what is useful.",
+      "one_liner": "Chew through a repository. Keep what is useful",
       "description": "Looks through other repositories for ideas worth using, checks the license, and proposes changes for review.",
       "ctas": [
         {
@@ -50,7 +50,7 @@
       "secondary": false,
       "collect_releases": true,
       "stable_display_order": 3,
-      "one_liner": "Make the repo easier to get into.",
+      "one_liner": "Make the repo shiny",
       "description": "Checks, examples, and templates to help people understand the project, run it, and make their first contribution.",
       "ctas": [
         {
@@ -72,7 +72,7 @@
       "secondary": false,
       "collect_releases": true,
       "stable_display_order": 4,
-      "one_liner": "Set up an economy and see what happens.",
+      "one_liner": "Silly global economic simulation",
       "description": "Simulates production, prices, trade, and settlement. Run the same setup twice and get the same result.",
       "ctas": [
         {
