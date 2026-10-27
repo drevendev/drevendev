@@ -53,8 +53,8 @@ def render(config, live):
                                     (("linkedin", "LinkedIn"), ("itch", "itch.io"),
                                      ("play", "Google Play"), ("spotify", "Spotify")))
     return f'''<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/header-ecg-dark.svg?v=2">
-  <img src="assets/header-ecg-light.svg?v=2" alt="Dreven: crab for tools, ECG pulse line for systems, fireworks for experiments, and scales for simulations." width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/header-profile-dark.svg">
+  <img src="assets/header-profile-light.svg" alt="Dreven: crab for tools, ECG pulse line for systems, fireworks for experiments, and scales for simulations." width="100%">
 </picture>
 
 <div align="center">
