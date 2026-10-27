@@ -31,16 +31,15 @@ def render(config, live):
     if config["layout"] == "cards":
         visuals = []
         for p in featured:
-            alt = esc(p["label"] + ". " + p["one_liner"] + " " + p["description"])
-            visuals.append(f'<a href="{esc(p["url"])}"><picture>'
-                           f'<source media="(prefers-color-scheme: dark)" srcset="assets/cards/{p["slug"]}-dark.svg">'
-                           f'<img src="assets/cards/{p["slug"]}-light.svg" width="400" alt="{alt}">'
-                           '</picture></a>')
-        actions = []
-        for p in featured:
             ctas = " · ".join(link(c["url"], c["label"]) for c in p["ctas"])
-            actions.append(f'<li><strong>{esc(p["label"])}</strong> — {ctas}</li>')
-        machinery = '<p align="center">\n' + '\n '.join(visuals) + '\n</p>\n\n<ul>\n' + '\n'.join(actions) + '\n</ul>'
+            icon = p.get("icon", "package")
+            visuals.append('<table align="left" width="400">\n<tr>'
+                           f'<td width="400" height="240" valign="top">'
+                           f'<h3><a href="{esc(p["url"])}"><img src="assets/icons/{icon}.svg" width="28" height="28" alt=""> {esc(p["label"])}</a></h3>'
+                           f'<p><strong>{esc(p["one_liner"])}</strong></p>'
+                           f'<p>{esc(p["description"])}</p>'
+                           f'</td></tr>\n<tr><td>{ctas}</td></tr>\n</table>')
+        machinery = '\n\n'.join(visuals) + '\n\n<br clear="all">'
     elif config["layout"] == "grid":
         machinery = '<table>\n<tr>\n' + '\n</tr>\n<tr>\n'.join(
             '\n'.join(f'<td width="50%" valign="top">\n{card}\n</td>' for card in cards[i:i + 2])
@@ -54,8 +53,8 @@ def render(config, live):
                                     (("linkedin", "LinkedIn"), ("itch", "itch.io"),
                                      ("play", "Google Play"), ("spotify", "Spotify")))
     return f'''<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg">
-  <img src="assets/header-light.svg" alt="Dreven's workshop: small mechanisms for tools, curious systems, simulations and games." width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/header-ecg-dark.svg">
+  <img src="assets/header-ecg-light.svg" alt="Dreven's workshop: crab, ECG pulse line for systems, fireworks and balanced scales." width="100%">
 </picture>
 
 <div align="center">

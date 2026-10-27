@@ -1,6 +1,6 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg">
-  <img src="assets/header-light.svg" alt="Dreven's workshop: small mechanisms for tools, curious systems, simulations and games." width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/header-ecg-dark.svg">
+  <img src="assets/header-ecg-light.svg" alt="Dreven's workshop: crab, ECG pulse line for systems, fireworks and balanced scales." width="100%">
 </picture>
 
 <div align="center">
@@ -18,19 +18,27 @@
 
 ## The main machinery
 
-<p align="center">
-<a href="https://github.com/drevendev/HungryCrab"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/HungryCrab-dark.svg"><img src="assets/cards/HungryCrab-light.svg" width="400" alt="HungryCrab. Chew through a repository. Keep what is useful. Find reusable ideas in other codebases, with evidence and licensing guardrails."></picture></a>
- <a href="https://github.com/drevendev/Devostasis"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/Devostasis-dark.svg"><img src="assets/cards/Devostasis-light.svg" width="400" alt="Devostasis. Vital signs for repositories, not mystery scores. Deterministic diagnostics that keep missing evidence unknown and explain what actually changed."></picture></a>
- <a href="https://github.com/drevendev/BeautifulRepo"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/BeautifulRepo-dark.svg"><img src="assets/cards/BeautifulRepo-light.svg" width="400" alt="BeautifulRepo. A repository should be pleasant to visit. Practical checks, examples, and templates for open source that&#x27;s easier to understand, try, and contribute to."></picture></a>
- <a href="https://github.com/drevendev/trade_simulation"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/trade_simulation-dark.svg"><img src="assets/cards/trade_simulation-light.svg" width="400" alt="TradeCraft. Build a market. Let the economy argue with itself. A deterministic sandbox for prices, production, trade, and settlement."></picture></a>
-</p>
+<table align="left" width="400">
+<tr><td width="400" height="240" valign="top"><h3><a href="https://github.com/drevendev/HungryCrab"><img src="assets/icons/crab.svg" width="28" height="28" alt=""> HungryCrab</a></h3><p><strong>Chew through a repository. Keep what is useful.</strong></p><p>Find reusable ideas in other codebases, with evidence and licensing guardrails.</p></td></tr>
+<tr><td><a href="https://github.com/drevendev/HungryCrab">Repository</a></td></tr>
+</table>
 
-<ul>
-<li><strong>HungryCrab</strong> — <a href="https://github.com/drevendev/HungryCrab">Repository</a></li>
-<li><strong>Devostasis</strong> — <a href="https://github.com/drevendev/Devostasis">Repository</a></li>
-<li><strong>BeautifulRepo</strong> — <a href="https://github.com/drevendev/BeautifulRepo">Repository</a> · <a href="https://github.com/drevendev/BeautifulRepo#start-here">Start here</a></li>
-<li><strong>TradeCraft</strong> — <a href="https://github.com/drevendev/trade_simulation">Repository</a> · <a href="https://drevendev.github.io/trade_simulation/">Milestone viewer</a></li>
-</ul>
+<table align="left" width="400">
+<tr><td width="400" height="240" valign="top"><h3><a href="https://github.com/drevendev/Devostasis"><img src="assets/icons/pulse.svg" width="28" height="28" alt=""> Devostasis</a></h3><p><strong>Vital signs for repositories, not mystery scores.</strong></p><p>Deterministic diagnostics that keep missing evidence unknown and explain what actually changed.</p></td></tr>
+<tr><td><a href="https://github.com/drevendev/Devostasis">Repository</a></td></tr>
+</table>
+
+<table align="left" width="400">
+<tr><td width="400" height="240" valign="top"><h3><a href="https://github.com/drevendev/BeautifulRepo"><img src="assets/icons/sparkles.svg" width="28" height="28" alt=""> BeautifulRepo</a></h3><p><strong>A repository should be pleasant to visit.</strong></p><p>Practical checks, examples, and templates for open source that&#x27;s easier to understand, try, and contribute to.</p></td></tr>
+<tr><td><a href="https://github.com/drevendev/BeautifulRepo">Repository</a> · <a href="https://github.com/drevendev/BeautifulRepo#start-here">Start here</a></td></tr>
+</table>
+
+<table align="left" width="400">
+<tr><td width="400" height="240" valign="top"><h3><a href="https://github.com/drevendev/trade_simulation"><img src="assets/icons/scales.svg" width="28" height="28" alt=""> TradeCraft</a></h3><p><strong>Build a market. Let the economy argue with itself.</strong></p><p>A deterministic sandbox for prices, production, trade, and settlement.</p></td></tr>
+<tr><td><a href="https://github.com/drevendev/trade_simulation">Repository</a> · <a href="https://drevendev.github.io/trade_simulation/">Milestone viewer</a></td></tr>
+</table>
+
+<br clear="all">
 
 ## From the workbench
 
