@@ -4,7 +4,7 @@
   "heading": "Hey, I'm Dreven. I make things.",
   "subtitle": "Open-source tools, curious systems, simulations, and games.",
   "character": "Some useful. Some weird. Occasionally both.",
-  "layout": "grid",
+  "layout": "single",
   "projects": [
     {
       "slug": "HungryCrab",

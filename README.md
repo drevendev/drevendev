@@ -15,36 +15,31 @@
 
 ## The main machinery
 
-<table>
-<tr>
-<td width="50%" valign="top">
 <h3>🦀 HungryCrab</h3>
 <p><strong>Eat a repository. Keep what is useful.</strong></p>
 <p>Find reusable ideas in other codebases, with evidence and licensing guardrails.</p>
 <p><a href="https://github.com/drevendev/HungryCrab">Repository</a></p>
-</td>
-<td width="50%" valign="top">
+
+<hr>
+
 <h3>🫀 Devostasis</h3>
 <p><strong>Vital signs for repositories, not mystery scores.</strong></p>
 <p>Deterministic diagnostics that keep missing evidence unknown and explain what actually changed.</p>
 <p><a href="https://github.com/drevendev/Devostasis">Repository</a></p>
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
+
+<hr>
+
 <h3>✨ BeautifulRepo</h3>
 <p><strong>A repository should be pleasant to visit.</strong></p>
 <p>Practical checks, examples, and templates for open source that&#x27;s easier to understand, try, and contribute to.</p>
 <p><a href="https://github.com/drevendev/BeautifulRepo">Repository</a> · <a href="https://github.com/drevendev/BeautifulRepo#start-here">Start here</a></p>
-</td>
-<td width="50%" valign="top">
+
+<hr>
+
 <h3>⚖️ TradeCraft</h3>
 <p><strong>Build a market. Let the economy argue with itself.</strong></p>
 <p>A deterministic sandbox for prices, production, trade, and settlement.</p>
 <p><a href="https://github.com/drevendev/trade_simulation">Repository</a> · <a href="https://drevendev.github.io/trade_simulation/">Milestone viewer</a></p>
-</td>
-</tr>
-</table>
 
 ## From the workbench
 
