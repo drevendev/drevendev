@@ -255,9 +255,11 @@ class ContractTests(unittest.TestCase):
         rendered = build_static.render(self.config, live)
         start, end = r.block_bounds(rendered.encode())
         self.assertEqual(rendered.encode()[start:end], live.encode())
-        self.assertEqual(rendered.count("<td "), 4)
         self.assertEqual(rendered.count("<h3>"), 4)
         self.assertIn(self.config["heading"].replace("'", "&#x27;"), rendered)
+        grid = copy.deepcopy(self.config)
+        grid["layout"] = "grid"
+        self.assertEqual(build_static.render(grid, live).count("<td "), 4)
         single = copy.deepcopy(self.config)
         single["layout"] = "single"
         self.assertNotIn("<td ", build_static.render(single, live))
