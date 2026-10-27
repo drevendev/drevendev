@@ -1,0 +1,213 @@
+{
+  "schema_version": 1,
+  "owner": "drevendev",
+  "heading": "Hey, I'm Dreven. I make things.",
+  "subtitle": "Open-source tools, curious systems, simulations, and games.",
+  "character": "Some useful. Some weird. Occasionally both.",
+  "layout": "single",
+  "projects": [
+    {
+      "slug": "HungryCrab",
+      "label": "🦀 HungryCrab",
+      "url": "https://github.com/drevendev/HungryCrab",
+      "featured": true,
+      "secondary": false,
+      "collect_releases": true,
+      "stable_display_order": 1,
+      "one_liner": "Eat a repository. Keep what is useful.",
+      "description": "Find reusable ideas in other codebases, with evidence and licensing guardrails.",
+      "ctas": [
+        {
+          "label": "Repository",
+          "url": "https://github.com/drevendev/HungryCrab"
+        }
+      ]
+    },
+    {
+      "slug": "Devostasis",
+      "label": "🫀 Devostasis",
+      "url": "https://github.com/drevendev/Devostasis",
+      "featured": true,
+      "secondary": false,
+      "collect_releases": true,
+      "stable_display_order": 2,
+      "one_liner": "Vital signs for repositories, not mystery scores.",
+      "description": "Deterministic diagnostics that keep missing evidence unknown and explain what actually changed.",
+      "ctas": [
+        {
+          "label": "Repository",
+          "url": "https://github.com/drevendev/Devostasis"
+        }
+      ]
+    },
+    {
+      "slug": "BeautifulRepo",
+      "label": "✨ BeautifulRepo",
+      "url": "https://github.com/drevendev/BeautifulRepo",
+      "featured": true,
+      "secondary": false,
+      "collect_releases": true,
+      "stable_display_order": 3,
+      "one_liner": "A repository should be pleasant to visit.",
+      "description": "Practical checks, examples, and templates for open source that's easier to understand, try, and contribute to.",
+      "ctas": [
+        {
+          "label": "Repository",
+          "url": "https://github.com/drevendev/BeautifulRepo"
+        },
+        {
+          "label": "Start here",
+          "url": "https://github.com/drevendev/BeautifulRepo#start-here"
+        }
+      ]
+    },
+    {
+      "slug": "trade_simulation",
+      "label": "⚖️ TradeCraft",
+      "url": "https://github.com/drevendev/trade_simulation",
+      "featured": true,
+      "secondary": false,
+      "collect_releases": true,
+      "stable_display_order": 4,
+      "one_liner": "Build a market. Let the economy argue with itself.",
+      "description": "A deterministic sandbox for prices, production, trade, and settlement.",
+      "ctas": [
+        {
+          "label": "Repository",
+          "url": "https://github.com/drevendev/trade_simulation"
+        },
+        {
+          "label": "Milestone viewer",
+          "url": "https://drevendev.github.io/trade_simulation/"
+        }
+      ],
+      "verified_demo_url": "https://drevendev.github.io/trade_simulation/"
+    },
+    {
+      "slug": "Dayflare",
+      "label": "Dayflare",
+      "url": "https://github.com/drevendev/Dayflare",
+      "featured": false,
+      "secondary": true,
+      "collect_releases": false,
+      "stable_display_order": 5,
+      "one_liner": "",
+      "description": "Explore how attention shifts across Wikipedia.",
+      "ctas": [
+        {
+          "label": "Repository",
+          "url": "https://github.com/drevendev/Dayflare"
+        }
+      ]
+    },
+    {
+      "slug": "Scriptorium",
+      "label": "Scriptorium",
+      "url": "https://github.com/drevendev/Scriptorium",
+      "featured": false,
+      "secondary": true,
+      "collect_releases": false,
+      "stable_display_order": 6,
+      "one_liner": "",
+      "description": "Offline text diagnostics with reproducible measurements.",
+      "ctas": [
+        {
+          "label": "Repository",
+          "url": "https://github.com/drevendev/Scriptorium"
+        }
+      ]
+    },
+    {
+      "slug": "Quillgrain",
+      "label": "Quillgrain",
+      "url": "https://github.com/drevendev/Quillgrain",
+      "featured": false,
+      "secondary": true,
+      "collect_releases": false,
+      "stable_display_order": 7,
+      "one_liner": "",
+      "description": "Versioned writing contexts and draft checks.",
+      "ctas": [
+        {
+          "label": "Repository",
+          "url": "https://github.com/drevendev/Quillgrain"
+        }
+      ]
+    },
+    {
+      "slug": "PatchPitch",
+      "label": "PatchPitch",
+      "url": "https://github.com/drevendev/PatchPitch",
+      "featured": false,
+      "secondary": true,
+      "collect_releases": true,
+      "stable_display_order": 8,
+      "one_liner": "",
+      "description": "Turn release notes into announcements with local AI.",
+      "ctas": [
+        {
+          "label": "Repository",
+          "url": "https://github.com/drevendev/PatchPitch"
+        }
+      ]
+    },
+    {
+      "slug": "CompostClub",
+      "label": "Compost Club",
+      "url": "https://github.com/drevendev/CompostClub",
+      "featured": false,
+      "secondary": true,
+      "collect_releases": true,
+      "stable_display_order": 9,
+      "one_liner": "",
+      "description": "Let unfinished ideas ferment with a local model.",
+      "ctas": [
+        {
+          "label": "Repository",
+          "url": "https://github.com/drevendev/CompostClub"
+        }
+      ]
+    },
+    {
+      "slug": "Playmancer",
+      "label": "Playmancer",
+      "url": "https://github.com/drevendev/Playmancer",
+      "featured": false,
+      "secondary": true,
+      "collect_releases": false,
+      "stable_display_order": 10,
+      "one_liner": "",
+      "description": "Mix preferences and inspect recommendation trade-offs.",
+      "ctas": [
+        {
+          "label": "Repository",
+          "url": "https://github.com/drevendev/Playmancer"
+        }
+      ]
+    },
+    {
+      "slug": "EndlessZenFramework",
+      "label": "EndlessZenFramework",
+      "url": "https://github.com/drevendev/EndlessZenFramework",
+      "featured": false,
+      "secondary": true,
+      "collect_releases": false,
+      "stable_display_order": 11,
+      "one_liner": "",
+      "description": "A starter for bounded autonomous research workers.",
+      "ctas": [
+        {
+          "label": "Repository",
+          "url": "https://github.com/drevendev/EndlessZenFramework"
+        }
+      ]
+    }
+  ],
+  "links": {
+    "linkedin": "https://www.linkedin.com/in/abogun/",
+    "itch": "https://drevengames.itch.io/",
+    "play": "https://play.google.com/store/apps/developer?id=Dreven+Games",
+    "spotify": "https://open.spotify.com/artist/0kL9vr7sptfFqyRd2TdQ2x",
+    "robot_anime": "https://open.spotify.com/artist/6iY5dj20aofxETQeOsb3G7"
+  }
+}
