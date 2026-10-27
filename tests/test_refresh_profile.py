@@ -285,7 +285,7 @@ class ContractTests(unittest.TestCase):
                     self.cards.append(self.current)
                     self.current = None
 
-        machinery = rendered.split("## The main machinery\n", 1)[1].split("## From the workbench", 1)[0]
+        machinery = rendered.split("## Projects\n", 1)[1].split("## Latest releases", 1)[0]
         parser = CardParser()
         parser.feed(machinery)
         featured = [p for p in self.config["projects"] if p["featured"]]

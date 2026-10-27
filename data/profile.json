@@ -2,8 +2,8 @@
   "schema_version": 1,
   "owner": "drevendev",
   "heading": "Hey, I'm Dreven. I make things.",
-  "subtitle": "Open-source tools, curious systems, simulations, and games.",
-  "character": "Some useful. Some weird. Occasionally both.",
+  "subtitle": "I build tools for working with code and text, and simulations to see how things behave.",
+  "character": "I also make games and music. You'll find those below.",
   "layout": "cards",
   "projects": [
     {
@@ -15,7 +15,7 @@
       "collect_releases": true,
       "stable_display_order": 1,
       "one_liner": "Chew through a repository. Keep what is useful.",
-      "description": "Find reusable ideas in other codebases, with evidence and licensing guardrails.",
+      "description": "Looks through other repositories for ideas worth using, checks the license, and proposes changes for review.",
       "ctas": [
         {
           "label": "Repository",
@@ -32,8 +32,8 @@
       "secondary": false,
       "collect_releases": true,
       "stable_display_order": 2,
-      "one_liner": "Vital signs for repositories, not mystery scores.",
-      "description": "Deterministic diagnostics that keep missing evidence unknown and explain what actually changed.",
+      "one_liner": "How is the repository holding up?",
+      "description": "Checks a repository's vital signs and shows the evidence. When data is missing, the result stays unknown.",
       "ctas": [
         {
           "label": "Repository",
@@ -50,8 +50,8 @@
       "secondary": false,
       "collect_releases": true,
       "stable_display_order": 3,
-      "one_liner": "A repository should be pleasant to visit.",
-      "description": "Practical checks, examples, and templates for open source that's easier to understand, try, and contribute to.",
+      "one_liner": "Make the repo easier to get into.",
+      "description": "Checks, examples, and templates to help people understand the project, run it, and make their first contribution.",
       "ctas": [
         {
           "label": "Repository",
@@ -72,8 +72,8 @@
       "secondary": false,
       "collect_releases": true,
       "stable_display_order": 4,
-      "one_liner": "Build a market. Let the economy argue with itself.",
-      "description": "A deterministic sandbox for prices, production, trade, and settlement.",
+      "one_liner": "Set up an economy and see what happens.",
+      "description": "Simulates production, prices, trade, and settlement. Run the same setup twice and get the same result.",
       "ctas": [
         {
           "label": "Repository",
@@ -96,7 +96,7 @@
       "collect_releases": false,
       "stable_display_order": 5,
       "one_liner": "",
-      "description": "Explore how attention shifts across Wikipedia.",
+      "description": "A map of what people are reading on Wikipedia, and how that changes.",
       "ctas": [
         {
           "label": "Repository",
@@ -114,7 +114,7 @@
       "collect_releases": false,
       "stable_display_order": 6,
       "one_liner": "",
-      "description": "Offline text diagnostics with reproducible measurements.",
+      "description": "Measures vocabulary, sentence length, dialogue, and punctuation in a text. Runs locally.",
       "ctas": [
         {
           "label": "Repository",
@@ -132,7 +132,7 @@
       "collect_releases": false,
       "stable_display_order": 7,
       "one_liner": "",
-      "description": "Versioned writing contexts and draft checks.",
+      "description": "Keeps writing rules and examples in versioned packs, then checks drafts against them.",
       "ctas": [
         {
           "label": "Repository",
@@ -150,7 +150,7 @@
       "collect_releases": true,
       "stable_display_order": 8,
       "one_liner": "",
-      "description": "Turn release notes into announcements with local AI.",
+      "description": "Turns release notes into announcement drafts with a local AI model.",
       "ctas": [
         {
           "label": "Repository",
@@ -168,7 +168,7 @@
       "collect_releases": true,
       "stable_display_order": 9,
       "one_liner": "",
-      "description": "Let unfinished ideas ferment with a local model.",
+      "description": "An experiment in finding new uses for unfinished ideas with a local model.",
       "ctas": [
         {
           "label": "Repository",
@@ -186,7 +186,7 @@
       "collect_releases": false,
       "stable_display_order": 10,
       "one_liner": "",
-      "description": "Mix preferences and inspect recommendation trade-offs.",
+      "description": "Mix a few favorite games and see what else might fit, and where you'd have to compromise.",
       "ctas": [
         {
           "label": "Repository",
@@ -204,7 +204,7 @@
       "collect_releases": false,
       "stable_display_order": 11,
       "one_liner": "",
-      "description": "A starter for bounded autonomous research workers.",
+      "description": "Instructions and templates for an AI researcher with a defined task and limits.",
       "ctas": [
         {
           "label": "Repository",

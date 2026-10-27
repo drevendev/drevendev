@@ -5,9 +5,11 @@ This is the public, sanitized implementation contract. The original owner-suppli
 document is retained privately; no local file path or private operational context is published.
 
 - Public profile: the root README of this repository, drevendev/drevendev.
-- Public language: English. Voice: calm, curious, lightly self-deprecating.
+- Public language: English. Voice: direct and conversational; explain what a project
+  does before adding a joke. Avoid repeated slogans and forced self-deprecation.
 - Exact heading: "Hey, I'm Dreven. I make things."
-- Exact subtitle: "Open-source tools, curious systems, simulations, and games."
+- Introduction and project copy are editable in data/profile.json. The owner's
+  October 2026 editorial revision replaces the original fixed subtitle.
 - Exactly four featured projects, in order: HungryCrab, Devostasis,
   BeautifulRepo, TradeCraft (repository: trade_simulation).
 - Exactly seven secondary projects: Dayflare, Scriptorium, Quillgrain,
