@@ -23,7 +23,7 @@ test in the same reviewed PR; a new release never promotes a project.
 
 The default cards layout uses four native HTML cards with selectable text and real links in each card footer. Aligned 400 px layout tables wrap into two columns when space permits and one column on narrow screens. There is no separate CTA list. A clear break keeps the release section below the cards. Legacy grid/single text layouts remain supported. Runtime refresh does not change layout.
 
-The active hero assets are header-ecg-light.svg and header-ecg-dark.svg. These fresh paths prevent a previously cached anatomical-heart image from appearing; both contain the original ECG line for Systems.
+The active hero assets are header-profile-light.svg and header-profile-dark.svg. These fresh paths show the current editorial copy without a stale GitHub image cache; both retain the original ECG line for Systems. Older hero files remain historical assets.
 
 Each project has a validated icon name. The default is package; Devostasis uses the original pulse path. Release icons always reserve an equal 20 by 20 px slot. Icon paths cannot point outside the local curated asset set.
 
