@@ -23,6 +23,7 @@ END = b"<!-- LIVE_RELEASES:END -->"
 MAX_PAGES = 20
 MAX_RESPONSE = 8 * 1024 * 1024
 MONTHS = ("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")
+ICONS = {"crab": "Crab", "pulse": "ECG pulse", "sparkles": "Sparkles", "scales": "Balance scales", "package": "Package"}
 
 
 class ProfileError(ValueError):
@@ -55,7 +56,7 @@ def load_config(path=ROOT / "data/profile.json"):
         raise ProfileError("Cannot read profile configuration") from exc
     if not isinstance(config, dict) or config.get("schema_version") != 1 or config.get("owner") != "drevendev":
         raise ProfileError("Invalid configuration owner/schema")
-    if config.get("layout") not in ("grid", "single"):
+    if config.get("layout") not in ("grid", "single", "cards"):
         raise ProfileError("Invalid layout")
     for key in ("heading", "subtitle", "character"):
         clean_text(config.get(key), key)
@@ -86,6 +87,8 @@ def load_config(path=ROOT / "data/profile.json"):
             raise ProfileError("Unexpected project owner/URL")
         clean_text(project.get("label"), "project label")
         clean_text(project.get("description"), "project description")
+        if project.get("icon", "package") not in ICONS:
+            raise ProfileError("Invalid project icon")
         if project["featured"]:
             clean_text(project.get("one_liner"), "one-liner")
         ctas = project.get("ctas")
@@ -237,10 +240,14 @@ def render_releases(releases):
     for r in releases:
         date = r["date"]
         label = html.escape(r["project"]["label"])
+        icon = r["project"].get("icon", "package")
+        if icon not in ICONS:
+            raise ProfileError("Invalid project icon")
+        visual = f'<img src="assets/icons/{icon}.svg" width="20" height="20" alt="{ICONS[icon]}">'
         tag = html.escape(r["tag"])
         url = html.escape(r["url"], quote=True)
         readable = f"{date.day:02d} {MONTHS[date.month - 1]} {date.year} UTC"
-        lines.append(f'<li><strong>{label}</strong> · <a href="{url}">{tag}</a> · {readable}</li>')
+        lines.append(f'<li>{visual} <strong>{label}</strong> · <a href="{url}">{tag}</a> · {readable}</li>')
     return "\n".join(lines + ["</ul>"])
 
 

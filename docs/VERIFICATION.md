@@ -1,5 +1,51 @@
 # Verification record
 
+## Latest design acceptance — cards and ECG pulse
+
+Owner-requested follow-up in [PR #4](https://github.com/drevendev/drevendev/pull/4).
+This section supersedes the earlier single-column text-block design record below.
+
+- Devostasis uses an original ECG pulse in both hero SVGs, its project card and
+  release icon selection. The anatomical heart is no longer displayed.
+- Four equal rectangular local SVG cards wrap into two columns on a wide README,
+  and one column on narrow screens. Each has a complete text alternative; ordinary
+  repository/demo CTA links remain visible outside the images.
+- LinkedIn, itch.io, Google Play and Spotify use local static banner links.
+  The lower games/music block includes the corresponding game and artist banners.
+- Every release row has one 20 by 20 px icon; package is the fallback. Icon names
+  are validated against the curated local set, including the ECG pulse.
+- Project facts, four featured identities, seven secondary projects, release
+  sources, social destinations and Actions cadence are unchanged.
+- 41 offline tests passed on Windows/Python 3.14 and in PR CI on Python 3.11/3.14.
+  Static config/README/asset checks passed. Actual public collection accepted
+  37 stable records across six sources before regenerating the release block.
+- [CI for the tested source revision](https://github.com/drevendev/drevendev/actions/runs/40589782841)
+  passed; source revision: d8dc17aa8bd16c7b70f8e88e7a97f32ead114c1f.
+  Publication and post-merge Action receipts are linked from PR #4.
+
+Actual GitHub rendering of the PR branch was checked in six combinations:
+
+| Width | Light | Dark |
+| --- | --- | --- |
+| 390 px | [Cards](screenshots/cards-light-390.jpg) | [Cards](screenshots/cards-dark-390.jpg) |
+| 768 px | [Cards](screenshots/cards-light-768.jpg) | [Cards](screenshots/cards-dark-768.jpg) |
+| 1280 px | [Cards](screenshots/cards-light-1280.jpg) | [Cards](screenshots/cards-dark-1280.jpg) |
+
+[Hero, ECG and link banners](screenshots/cards-hero-dark.jpg) ·
+[Uniform release icons](screenshots/cards-releases-dark.jpg) ·
+[Layout measurements](screenshots/cards-metrics.json).
+
+At 1280 px, cards measured 400 px each in a 2x2 arrangement. At 768 px and
+390 px they wrapped into one column, measuring approximately 391 px and 309 px.
+All card images loaded. Page scrollWidth equalled clientWidth in each tested
+size, so there was no horizontal page overflow. All four release icon rectangles
+measured 20x20 px with the same horizontal start position.
+
+The cards and buttons are built offline from the one profile config using
+scripts/build_assets.py, invoked by the explicit authoring/check command.
+Scheduled refresh still writes only LIVE_RELEASES.
+
+
 ## Preflight — 27 October 2026
 
 - Target repository: public drevendev/drevendev. Default branch: master.

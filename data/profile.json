@@ -4,11 +4,11 @@
   "heading": "Hey, I'm Dreven. I make things.",
   "subtitle": "Open-source tools, curious systems, simulations, and games.",
   "character": "Some useful. Some weird. Occasionally both.",
-  "layout": "single",
+  "layout": "cards",
   "projects": [
     {
       "slug": "HungryCrab",
-      "label": "🦀 HungryCrab",
+      "label": "HungryCrab",
       "url": "https://github.com/drevendev/HungryCrab",
       "featured": true,
       "secondary": false,
@@ -21,11 +21,12 @@
           "label": "Repository",
           "url": "https://github.com/drevendev/HungryCrab"
         }
-      ]
+      ],
+      "icon": "crab"
     },
     {
       "slug": "Devostasis",
-      "label": "🫀 Devostasis",
+      "label": "Devostasis",
       "url": "https://github.com/drevendev/Devostasis",
       "featured": true,
       "secondary": false,
@@ -38,11 +39,12 @@
           "label": "Repository",
           "url": "https://github.com/drevendev/Devostasis"
         }
-      ]
+      ],
+      "icon": "pulse"
     },
     {
       "slug": "BeautifulRepo",
-      "label": "✨ BeautifulRepo",
+      "label": "BeautifulRepo",
       "url": "https://github.com/drevendev/BeautifulRepo",
       "featured": true,
       "secondary": false,
@@ -59,11 +61,12 @@
           "label": "Start here",
           "url": "https://github.com/drevendev/BeautifulRepo#start-here"
         }
-      ]
+      ],
+      "icon": "sparkles"
     },
     {
       "slug": "trade_simulation",
-      "label": "⚖️ TradeCraft",
+      "label": "TradeCraft",
       "url": "https://github.com/drevendev/trade_simulation",
       "featured": true,
       "secondary": false,
@@ -81,7 +84,8 @@
           "url": "https://drevendev.github.io/trade_simulation/"
         }
       ],
-      "verified_demo_url": "https://drevendev.github.io/trade_simulation/"
+      "verified_demo_url": "https://drevendev.github.io/trade_simulation/",
+      "icon": "scales"
     },
     {
       "slug": "Dayflare",
@@ -98,7 +102,8 @@
           "label": "Repository",
           "url": "https://github.com/drevendev/Dayflare"
         }
-      ]
+      ],
+      "icon": "package"
     },
     {
       "slug": "Scriptorium",
@@ -115,7 +120,8 @@
           "label": "Repository",
           "url": "https://github.com/drevendev/Scriptorium"
         }
-      ]
+      ],
+      "icon": "package"
     },
     {
       "slug": "Quillgrain",
@@ -132,7 +138,8 @@
           "label": "Repository",
           "url": "https://github.com/drevendev/Quillgrain"
         }
-      ]
+      ],
+      "icon": "package"
     },
     {
       "slug": "PatchPitch",
@@ -149,7 +156,8 @@
           "label": "Repository",
           "url": "https://github.com/drevendev/PatchPitch"
         }
-      ]
+      ],
+      "icon": "package"
     },
     {
       "slug": "CompostClub",
@@ -166,7 +174,8 @@
           "label": "Repository",
           "url": "https://github.com/drevendev/CompostClub"
         }
-      ]
+      ],
+      "icon": "package"
     },
     {
       "slug": "Playmancer",
@@ -183,7 +192,8 @@
           "label": "Repository",
           "url": "https://github.com/drevendev/Playmancer"
         }
-      ]
+      ],
+      "icon": "package"
     },
     {
       "slug": "EndlessZenFramework",
@@ -200,7 +210,8 @@
           "label": "Repository",
           "url": "https://github.com/drevendev/EndlessZenFramework"
         }
-      ]
+      ],
+      "icon": "package"
     }
   ],
   "links": {

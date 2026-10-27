@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 278" role="img" aria-labelledby="title desc">
+<title id="title">Devostasis</title>
+<desc id="desc">Vital signs for repositories, not mystery scores. Deterministic diagnostics that keep missing evidence unknown and explain what actually changed.</desc>
+<metadata>Emoji artwork: Twemoji v14.0.2, CC BY 4.0; see docs/ASSET_CREDITS.md. Original layout and ECG pulse.</metadata>
+<style>
+:root { --paper:#F6F4EF; --ink:#24292F; --line:#B7C4B7; --sage:#52735A; --pulse:#52735A; --muted:#526050; }
+@media(prefers-color-scheme:dark) {
+:root { --paper:#161D24; --ink:#E9E6DD; --line:#3D4C43; --sage:#87A78C; --pulse:#87A78C; --muted:#B9C8BB; }
+}
+</style>
+<rect x="1" y="1" width="398" height="276" rx="10" fill="var(--paper,#F6F4EF)" stroke="var(--line)" stroke-width="1.5"/>
+<path d="M2 20v238" stroke="#63866A" stroke-width="4" stroke-linecap="round"/>
+<g fill="var(--ink)" font-family="Arial,Helvetica,sans-serif">
+<text x="22" y="26" font-size="10" letter-spacing="2" fill="var(--muted)">02 / OPEN SOURCE</text>
+<text x="22" y="62" font-size="25" font-weight="700"><tspan x="22" dy="0">Devostasis</tspan></text>
+<text x="22" y="106" font-size="20" font-weight="700"><tspan x="22" dy="0">Vital signs for repositories, not</tspan><tspan x="22" dy="25">mystery scores.</tspan></text>
+<text x="22" y="174" font-size="19" font-weight="400"><tspan x="22" dy="0">Deterministic diagnostics that keep</tspan><tspan x="22" dy="24">missing evidence unknown and explain</tspan><tspan x="22" dy="24">what actually changed.</tspan></text>
+</g>
+<svg x="328" y="18" width="50" height="50" viewBox="0 0 36 36" stroke="none">
+
+
+<path d="M2 19h7l4-10 6 20 5-15 3 5h7" fill="none" stroke="var(--pulse,#52735A)" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</svg>

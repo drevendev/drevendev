@@ -16,13 +16,14 @@ python -m unittest discover -s tests -v
 
 The authoring command preserves the existing live block. It is never called by the
 scheduled updater. Do not maintain separate descriptions/links by editing README output.
-Presentation changes belong in scripts/build_static.py and the two original SVGs.
+Presentation changes belong in scripts/build_static.py, scripts/build_assets.py and the two header SVGs. The authoring command also rebuilds and checks static project cards and link banners.
 The initial four featured identities and seven secondary identities are covered by
 a contract test. An intentional future catalogue replacement must update that
 test in the same reviewed PR; a new release never promotes a project.
 
-Set layout to grid or single in the config. Prefer single if the GitHub mobile
-render of the table becomes cramped. Runtime refresh does not change layout.
+The default cards layout uses local 400 px SVG cards that wrap into two columns when space permits and one column on narrow screens. Text CTA links remain below the cards, and every card has a complete text alternative. Legacy grid/single text layouts remain supported. Runtime refresh does not change layout.
+
+Each project has a validated icon name. The default is package; Devostasis uses the original pulse path. Release icons always reserve an equal 20 by 20 px slot. Icon paths cannot point outside the local curated asset set.
 
 Social URLs retain their expected provider hosts. A new provider requires a reviewed
 validator update. Do not substitute an unrelated page for an unavailable supplied URL.

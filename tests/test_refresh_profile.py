@@ -69,6 +69,17 @@ class ContractTests(unittest.TestCase):
         self.config_error(lambda c: c["projects"][0]["ctas"].append(
             {"label": "Open", "url": "https://evil.example/"}))
 
+    def test_config_rejects_unsafe_icon_path(self):
+        self.config_error(lambda c: c["projects"][0].update(icon="../heart"))
+
+    def test_release_icons_have_uniform_slots_and_a_fallback(self):
+        self.config["projects"][0].pop("icon")
+        output = r.render_releases(self.latest())
+        self.assertEqual(output.count('width="20" height="20"'), 4)
+        self.assertIn('assets/icons/package.svg', output)
+        self.assertIn('assets/icons/pulse.svg', output)
+        self.assertNotIn('heart.svg', output)
+
     def test_config_rejects_social_redirect_host(self):
         self.config_error(lambda c: c["links"].update(spotify="https://redirect.example/spotify"))
 
@@ -148,7 +159,9 @@ class ContractTests(unittest.TestCase):
                      name="<script>do not publish</script>", body="PRIVATE_BODY_SENTINEL")
         output = r.render_releases(self.latest())
         self.assertIn("&lt;img", output)
-        self.assertNotIn("<img", output)
+        self.assertNotIn("<img src=x", output)
+        self.assertNotIn(' onerror="', output)
+        self.assertEqual(output.count("<img "), 4)
         self.assertNotIn("<script", output)
         self.assertNotIn("PRIVATE_BODY_SENTINEL", output)
 
@@ -255,7 +268,10 @@ class ContractTests(unittest.TestCase):
         rendered = build_static.render(self.config, live)
         start, end = r.block_bounds(rendered.encode())
         self.assertEqual(rendered.encode()[start:end], live.encode())
-        self.assertEqual(rendered.count("<h3>"), 4)
+        for project in self.config["projects"]:
+            if project["featured"]:
+                self.assertIn(project["url"], rendered)
+                self.assertIn('assets/cards/' + project["slug"] + '-light.svg', rendered)
         self.assertIn(self.config["heading"].replace("'", "&#x27;"), rendered)
         grid = copy.deepcopy(self.config)
         grid["layout"] = "grid"
