@@ -41,8 +41,8 @@ during publication acceptance below.
 
 ## Published acceptance — 27 October 2026
 
-Profile: https://github.com/drevendev  
-Repository: https://github.com/drevendev/drevendev  
+Profile: https://github.com/drevendev
+Repository: https://github.com/drevendev/drevendev
 Accepted product revision: fa4f0ae6336de915388448866f85965204479cf5.
 
 - [Implementation PR #1](https://github.com/drevendev/drevendev/pull/1): merged.
@@ -146,5 +146,3 @@ contribution UI visible in some screenshots) is outside the authored README.
 Merged-PR feeds, social autoposting, extra visualizations and release-dispatch
 integrations remain outside V1. GitHub may disable inactive public-repository
 schedules after 60 days; the maintenance guide explains manual re-enablement.
-
-
