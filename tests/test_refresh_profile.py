@@ -3,6 +3,7 @@ import contextlib
 import copy
 import io
 import json
+from html.parser import HTMLParser
 import os
 from pathlib import Path
 import shutil
@@ -268,10 +269,30 @@ class ContractTests(unittest.TestCase):
         rendered = build_static.render(self.config, live)
         start, end = r.block_bounds(rendered.encode())
         self.assertEqual(rendered.encode()[start:end], live.encode())
-        for project in self.config["projects"]:
-            if project["featured"]:
-                self.assertIn(project["url"], rendered)
-                self.assertIn('assets/cards/' + project["slug"] + '-light.svg', rendered)
+        class CardParser(HTMLParser):
+            def __init__(self):
+                super().__init__()
+                self.cards, self.current = [], None
+
+            def handle_starttag(self, tag, attrs):
+                if tag == "table":
+                    self.current = []
+                if tag == "a" and self.current is not None:
+                    self.current.append(dict(attrs).get("href"))
+
+            def handle_endtag(self, tag):
+                if tag == "table":
+                    self.cards.append(self.current)
+                    self.current = None
+
+        machinery = rendered.split("## The main machinery\n", 1)[1].split("## From the workbench", 1)[0]
+        parser = CardParser()
+        parser.feed(machinery)
+        featured = [p for p in self.config["projects"] if p["featured"]]
+        self.assertEqual(len(parser.cards), len(featured))
+        for project, urls in zip(featured, parser.cards):
+            self.assertTrue({c["url"] for c in project["ctas"]}.issubset(urls))
+        self.assertNotIn("<ul>", machinery)
         self.assertIn(self.config["heading"].replace("'", "&#x27;"), rendered)
         grid = copy.deepcopy(self.config)
         grid["layout"] = "grid"

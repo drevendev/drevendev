@@ -34,8 +34,8 @@ def render(config, live):
             ctas = " · ".join(link(c["url"], c["label"]) for c in p["ctas"])
             icon = p.get("icon", "package")
             visuals.append('<table align="left" width="400">\n<tr>'
-                           f'<td width="365" height="265" valign="top">'
-                           f'<h3><img src="assets/icons/{icon}.svg" width="28" height="28" alt=""> {esc(p["label"])}</h3>'
+                           f'<td width="400" height="240" valign="top">'
+                           f'<h3><a href="{esc(p["url"])}"><img src="assets/icons/{icon}.svg" width="28" height="28" alt=""> {esc(p["label"])}</a></h3>'
                            f'<p><strong>{esc(p["one_liner"])}</strong></p>'
                            f'<p>{esc(p["description"])}</p>'
                            f'</td></tr>\n<tr><td>{ctas}</td></tr>\n</table>')
