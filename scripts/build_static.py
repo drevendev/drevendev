@@ -76,6 +76,7 @@ Sometimes I make games. Sometimes music. Sometimes the distinction gets blurry.
 ---
 
 <sub>Still making things. Occasionally putting the tools away.</sub>
+<br><sub>Emoji artwork: <a href="docs/ASSET_CREDITS.md">Twemoji · CC BY 4.0</a>.</sub>
 '''
 
 

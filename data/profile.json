@@ -14,7 +14,7 @@
       "secondary": false,
       "collect_releases": true,
       "stable_display_order": 1,
-      "one_liner": "Eat a repository. Keep what is useful.",
+      "one_liner": "Chew through a repository. Keep what is useful.",
       "description": "Find reusable ideas in other codebases, with evidence and licensing guardrails.",
       "ctas": [
         {
