@@ -1,6 +1,29 @@
 # Verification record
 
-## Latest design acceptance — cards and ECG pulse
+## Latest acceptance — links inside cards
+
+[PR #5](https://github.com/drevendev/drevendev/pull/5) replaces the image-card
+wrappers with native HTML cards. Each card has selectable project text and its
+own footer containing the configured repository/demo links. The separate CTA
+list below the cards is removed. Titles also link to their own repository.
+
+- Actual GitHub rendering: a 2x2 grid of approximately 400x277 px cards at 1280 px,
+  one column of approximately 309 px cards at 390 px, with no horizontal overflow.
+- Both light and dark themes were inspected. [Desktop dark](screenshots/inline-actions-dark-1280.jpg),
+  [mobile dark](screenshots/inline-actions-dark-390.jpg),
+  [desktop light](screenshots/inline-actions-light-1280.jpg),
+  [mobile light](screenshots/inline-actions-light-390.jpg).
+- Clicking TradeCraft's Milestone viewer opened the actual recorded-economy viewer;
+  clicking its title independently opened drevendev/trade_simulation.
+- The active hero paths are header-ecg-light.svg and header-ecg-dark.svg. Both
+  contain the ECG pulse for Systems. Fresh filenames avoid an old cached heart image.
+- 41 offline tests pass, including parsed-HTML verification that every configured
+  CTA is inside its own card and no separate action list remains.
+- Release selection, source permissions, social links and schedule are unchanged.
+  Post-publication verification and Action receipts are linked from PR #5.
+
+
+## Previous design acceptance — SVG cards and ECG pulse
 
 Owner-requested follow-up in [PR #4](https://github.com/drevendev/drevendev/pull/4).
 This section supersedes the earlier single-column text-block design record below.
