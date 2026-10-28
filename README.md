@@ -48,7 +48,7 @@ Latest stable release from each project, up to four. Dates are in UTC.
 <table>
 <thead><tr><th scope="col">Project</th><th scope="col">Release</th><th scope="col">Date (UTC)</th></tr></thead>
 <tbody>
-<tr><td><img src="assets/icons/crab.svg" width="20" height="20" alt="Crab"> <strong>HungryCrab</strong></td><td><a href="https://github.com/drevendev/HungryCrab/releases/tag/v0.6.6">v0.6.6</a></td><td>26 Oct 2026</td></tr>
+<tr><td><img src="assets/icons/crab.svg" width="20" height="20" alt="Crab"> <strong>HungryCrab</strong></td><td><a href="https://github.com/drevendev/HungryCrab/releases/tag/v0.6.7">v0.6.7</a></td><td>28 Oct 2026</td></tr>
 <tr><td><img src="assets/icons/package.svg" width="20" height="20" alt="Package"> <strong>PatchPitch</strong></td><td><a href="https://github.com/drevendev/PatchPitch/releases/tag/v0.3.0">v0.3.0</a></td><td>24 Oct 2026</td></tr>
 <tr><td><img src="assets/icons/sparkles.svg" width="20" height="20" alt="Sparkles"> <strong>BeautifulRepo</strong></td><td><a href="https://github.com/drevendev/BeautifulRepo/releases/tag/v0.2.0">v0.2.0</a></td><td>23 Oct 2026</td></tr>
 <tr><td><img src="assets/icons/scales.svg" width="20" height="20" alt="Balance scales"> <strong>TradeCraft</strong></td><td><a href="https://github.com/drevendev/trade_simulation/releases/tag/v0.4.0">v0.4.0</a></td><td>30 Sep 2026</td></tr>
