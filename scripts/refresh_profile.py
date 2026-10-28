@@ -109,7 +109,7 @@ def load_config(path=ROOT / "data/profile.json"):
     if not any(p["collect_releases"] for p in projects):
         raise ProfileError("No release sources")
     links = config.get("links")
-    hosts = {"linkedin": "www.linkedin.com", "itch": "drevengames.itch.io",
+    hosts = {"shop": "drevengames.itch.io", "linkedin": "www.linkedin.com", "itch": "drevengames.itch.io",
              "play": "play.google.com", "spotify": "open.spotify.com", "robot_anime": "open.spotify.com"}
     if not isinstance(links, dict) or links.keys() != hosts.keys():
         raise ProfileError("Invalid social links")

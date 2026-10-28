@@ -16,8 +16,8 @@ def link(url, text):
     return f'<a href="{esc(url)}">{esc(text)}</a>'
 
 
-def badge(url, asset, label):
-    return f'<a href="{esc(url)}"><img src="assets/links/{asset}.svg" width="136" height="38" alt="{esc(label)}"></a>'
+def badge(url, asset, label, width=136):
+    return f'<a href="{esc(url)}"><img src="assets/links/{asset}.svg" width="{width}" height="38" alt="{esc(label)}"></a>'
 
 
 def render(config, live):
@@ -87,7 +87,8 @@ Latest stable release from each project, up to four. Dates are in UTC.
 
 My games are on itch.io and Google Play. I release music as Dr. Weeb and Robot Anime.
 
-<p>{badge(links["itch"], "itch", "Games on itch.io")} {badge(links["play"], "play", "Google Play")}<br>
+<p>{badge(links["shop"], "idle-fantasy-shop", "Idle Fantasy Shop", width=196)}<br>
+{badge(links["itch"], "itch", "Games on itch.io")} {badge(links["play"], "play", "Google Play")}<br>
 {badge(links["spotify"], "dr-weeb", "Dr. Weeb")} {badge(links["robot_anime"], "robot-anime", "Robot Anime")}</p>
 
 ---

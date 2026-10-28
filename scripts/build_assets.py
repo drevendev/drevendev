@@ -61,17 +61,18 @@ def card_svg(project, index, theme):
 '''
 
 
-def badge_svg(label, kind):
+def badge_svg(label, kind, width=144):
     drawings = {
         "linkedin": '<rect x="12" y="10" width="20" height="20" rx="3" fill="#0A66C2"/><text x="16" y="25" fill="white" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">in</text>',
         "itch": '<g fill="none" stroke="#D56A70" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 14h11l5 12q0 3-3 2l-5-4h-6l-5 4q-3 1-3-2z"/><path d="M15 20h6m-3-3v6"/><circle cx="26" cy="18" r="1"/><circle cx="29" cy="21" r="1"/></g>',
         "play": '<path d="M15 10l18 10-18 10z" fill="#D6A55B"/><path d="M15 10v20" stroke="var(--sage)" stroke-width="2"/>',
+        "shop": '<g fill="none" stroke="#D6A55B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 18h22l-3-7H15zM14 18v12h18V18M22 30v-8h6v8M20 11l-1 7m7-7 1 7"/></g>',
         "music": '<g fill="none" stroke="var(--sage)" stroke-width="2" stroke-linecap="round"><path d="M20 26V12l12-3v14m-12-6 12-3"/><ellipse cx="16.5" cy="27" rx="3.5" ry="2.5" fill="var(--sage)"/><ellipse cx="28.5" cy="24" rx="3.5" ry="2.5" fill="var(--sage)"/></g>',
     }
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144 40" role="img" aria-labelledby="title">
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} 40" role="img" aria-labelledby="title">
 <title id="title">{escape(label)}</title>
 {THEME}
-<rect x="1" y="1" width="142" height="38" rx="7" fill="var(--paper)" stroke="var(--line)" stroke-width="1.5"/>
+<rect x="1" y="1" width="{width - 2}" height="38" rx="7" fill="var(--paper)" stroke="var(--line)" stroke-width="1.5"/>
 {drawings[kind]}
 <text x="42" y="25" fill="var(--ink)" font-family="Arial,Helvetica,sans-serif" font-size="15.5" font-weight="600">{escape(label)}</text>
 </svg>
@@ -89,6 +90,7 @@ def outputs(config):
                               ("play", "Google Play", "play"), ("spotify", "Spotify", "music"),
                               ("dr-weeb", "Dr. Weeb", "music"), ("robot-anime", "Robot Anime", "music")):
         result[f"assets/links/{slug}.svg"] = badge_svg(label, kind)
+    result["assets/links/idle-fantasy-shop.svg"] = badge_svg("Idle Fantasy Shop", "shop", width=208)
     return result
 
 
