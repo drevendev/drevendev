@@ -72,7 +72,8 @@ Latest stable release from each project, up to four. Dates are in UTC.
 
 My games are on itch.io and Google Play. I release music as Dr. Weeb and Robot Anime.
 
-<p><a href="https://drevengames.itch.io/"><img src="assets/links/itch.svg" width="136" height="38" alt="Games on itch.io"></a> <a href="https://play.google.com/store/apps/developer?id=Dreven+Games"><img src="assets/links/play.svg" width="136" height="38" alt="Google Play"></a><br>
+<p><a href="https://drevengames.itch.io/idle-fantasy-shop"><img src="assets/links/idle-fantasy-shop.svg" width="196" height="38" alt="Idle Fantasy Shop"></a><br>
+<a href="https://drevengames.itch.io/"><img src="assets/links/itch.svg" width="136" height="38" alt="Games on itch.io"></a> <a href="https://play.google.com/store/apps/developer?id=Dreven+Games"><img src="assets/links/play.svg" width="136" height="38" alt="Google Play"></a><br>
 <a href="https://open.spotify.com/artist/0kL9vr7sptfFqyRd2TdQ2x"><img src="assets/links/dr-weeb.svg" width="136" height="38" alt="Dr. Weeb"></a> <a href="https://open.spotify.com/artist/6iY5dj20aofxETQeOsb3G7"><img src="assets/links/robot-anime.svg" width="136" height="38" alt="Robot Anime"></a></p>
 
 ---

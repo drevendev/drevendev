@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 208 40" role="img" aria-labelledby="title">
+<title id="title">Idle Fantasy Shop</title>
+<style>
+:root { --paper:#F6F4EF; --ink:#24292F; --line:#B7C4B7; --sage:#52735A; --pulse:#52735A; --muted:#526050; }
+@media(prefers-color-scheme:dark) {
+:root { --paper:#161D24; --ink:#E9E6DD; --line:#3D4C43; --sage:#87A78C; --pulse:#87A78C; --muted:#B9C8BB; }
+}
+</style>
+<rect x="1" y="1" width="206" height="38" rx="7" fill="var(--paper)" stroke="var(--line)" stroke-width="1.5"/>
+<g fill="none" stroke="#D6A55B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 18h22l-3-7H15zM14 18v12h18V18M22 30v-8h6v8M20 11l-1 7m7-7 1 7"/></g>
+<text x="42" y="25" fill="var(--ink)" font-family="Arial,Helvetica,sans-serif" font-size="15.5" font-weight="600">Idle Fantasy Shop</text>
+</svg>
